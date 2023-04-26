@@ -68,7 +68,7 @@ int main()
     }
     cout << ("first \n");
     for(i=0;i<n;i++)
-        cout << ("FIRS[%c]=%s\n",st[i][0],ft[i]);
+        cout << ("FIRS[%c]=%s\t\n",st[i][0],ft[i]);
     fol[0][0]='$';
     for(i=0;i<n;i++)
     {
@@ -161,7 +161,7 @@ int main()
     }
     cout << ("follow \n");
     for(i=0;i<n;i++)
-        cout << ("FOLLOW[%c] = %s\n",st[i][0],fol[i]);
+        cout << (" FOLLOW[%c] = %s\t\n ",st[i][0],fol[i]);
     cout << ("\n");
     s=0;
     for(i=0;i<n;i++)
@@ -192,12 +192,12 @@ int main()
                     }
                     while(fol[a][b]!='\0')
                     {
-                        cout << ("M[%c,%c]=%s\n",st[i][0],fol[a][b],fin[s]);
+                        cout << (" M[%c,%c]=%s\t\n ",st[i][0],fol[a][b],fin[s]);
                         b++;
                     }
                 }
                 else if(!((st[i][t]>64)&&(st[i][t]<91)))
-                    cout << ("M[%c,%c]=%s\n",st[i][0],st[i][t],fin[s]);
+                    cout << (" M[%c,%c]=%s\t\n ",st[i][0],st[i][t],fin[s]);
                 else
                 {
                     b=0;
@@ -208,7 +208,7 @@ int main()
                     }
                     while(ft[a][b]!='\0')
                     {
-                        cout << ("M[%c,%c]=%s\n",st[i][0],ft[a][b],fin[s]);
+                        cout << (" M[%c,%c]=%s\t\n ",st[i][0],ft[a][b],fin[s]);
                         b++;
                     }
                 }
